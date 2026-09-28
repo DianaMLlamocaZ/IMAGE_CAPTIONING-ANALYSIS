@@ -39,7 +39,7 @@ Las particiones se distribuyeron de la siguiente manera:
 
 ## 3) PREPROCESAMIENTO DE DATOS
 
-### 3.1) <u>IMAGEN</u>
+### 3.1) IMAGEN
 El preprocesamiento de las imágenes se realizó de acuerdo al modelo *Inception V3*, y se describe a continuación:
 
 #### 1) **Resize 299**:
