@@ -42,16 +42,16 @@ Las particiones se distribuyeron de la siguiente manera:
 ### 3.1) IMAGEN
 El preprocesamiento de las imágenes se realizaron de acuerdo al modelo *Inception V3*, y se describen a continuación:
 
-- 1. **Resize 299**:
+- 1.- **Resize 299**:
   Redimensionado del lado más pequeño de la imagen para mantener el *ratio* ancho*alto.
   
-- 2. **Center Crop 299**:
+- 2.- **Center Crop 299**:
   Recorte central de la imagen para obtener una matriz cuadrada sin alterar el *ratio*.
   
-- 3. **Conversión a tensor**:
+- 3.- **Conversión a tensor**:
   Transformación de imágenes PIL a tensores de PyTorch.
   
-- 4. **Normalización**:
+- 4.- **Normalización**:
   Aplicación de normalización usando *mean*=[0.485,0.456,0.406] y *std*=[0.229,0.224,0.225] sobre los tres canales de la imagen, adaptado al modelo *Inception V3*.
 
 
