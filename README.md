@@ -15,7 +15,6 @@ Además, utilicé estrategias de *decoding* como *Greedy Approach*, *Beam Search
 - El *dataset* utilizado fue **Flickr 8k Dataset**, disponible en *Kaggle*.
 - El conjunto de datos contiene 8091 imágenes, cada una anotada con 5 *captions*.
 
-<br>
 
 ### 2.1) DIVISIÓN DE DATOS
 
