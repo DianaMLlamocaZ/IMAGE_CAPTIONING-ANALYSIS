@@ -17,10 +17,10 @@ Además, utilicé estrategias de *decoding* como *Greedy Approach*, *Beam Search
 
 
 ### 2.1) DIVISIÓN DE DATOS
-#### ESTRATEGIA
+#### - ESTRATEGIA
 La división de datos se realizó en base a la cantidad de imágenes para evitar *Data Leakage*, el cual podía haber ocurrido si la partición recaía sobre el total de *captions*.
 
-#### DISTRIBUCIÓN DE SPLITS
+#### - DISTRIBUCIÓN DE SPLITS
 Las particiones se distribuyeron de la siguiente manera:
 
 <div align="center">
