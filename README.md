@@ -30,6 +30,7 @@ Las particiones se distribuyeron de la siguiente manera:
 |    Train   |     70%    |   5564   |   28320  |
 | Validation |     20%    |   1618   |   8090   |
 |    Test    |     10%    |    809   |   4045   |
+
 </div>
 
 ----
