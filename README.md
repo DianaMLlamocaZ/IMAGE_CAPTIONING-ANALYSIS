@@ -16,7 +16,7 @@ Además, utilicé estrategias de *decoding* como *Greedy Approach*, *Beam Search
 - El conjunto de datos contiene 8091 imágenes, cada una anotada con 5 *captions*.
 
 
-### 2.1) DIVISIÓN DE DATOS
+### <ins>2.1) DIVISIÓN DE DATOS</ins>
 #### - ESTRATEGIA
 La división de datos se realizó en base a la cantidad de imágenes para evitar *Data Leakage*, el cual podía haber ocurrido si la partición recaía sobre el total de *captions*.
 
@@ -39,7 +39,7 @@ Las particiones se distribuyeron de la siguiente manera:
 
 ## 3) <ins>PREPROCESAMIENTO DE DATOS</ins>
 
-### 3.1) IMAGEN
+### <ins>3.1) IMAGEN</ins>
 El preprocesamiento de las imágenes se realizó de acuerdo al modelo *Inception V3*, y se describe a continuación:
 
 #### 1) **Resize 299**:
