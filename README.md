@@ -11,7 +11,11 @@ Además, utilicé estrategias de *decoding* como *Greedy Approach*, *Beam Search
 
 ----
 
-## 2) ARQUITECTURA
-### 2.1) ENCODER
+## 2) DATASET
 
-### 2.2) DECODER
+----
+
+## 3) ARQUITECTURA
+### 3.1) ENCODER
+
+### 3.2) DECODER
