@@ -18,11 +18,13 @@ Además, utilicé estrategias de *decoding* como *Greedy Approach*, *Beam Search
 
 ### 2.1) DIVISIÓN DE DATOS
 #### 2.1.1) ESTRATEGIA:
-- La división de datos se realizó en base a la cantidad de imágenes para evitar *Data Leakage*, el cual podía ocurrir si la partición recaía sobre el total de *captions*.
+La división de datos se realizó en base a la cantidad de imágenes para evitar *Data Leakage*, el cual podía ocurrir si la partición recaía sobre el total de *captions*.
 
 #### 2.1.2) DISTRIBUCIÓN DE SPLITS
-
-
+Las particiones se distribuyeron de la siguiente manera:
+- 70% *Train*: 5664 imágenes --> *captions*: 5664*5 = 28320
+- 20% *Validation*: 1618 imágenes --> *captions*: 1618*5 = 8090
+- 10% *Test*: 809 imágenes --> *captions*: 809*5 = 4045
 
 ----
 
