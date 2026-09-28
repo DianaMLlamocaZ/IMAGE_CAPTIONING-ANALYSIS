@@ -23,11 +23,13 @@ La división de datos se realizó en base a la cantidad de imágenes para evitar
 #### 2.1.2) DISTRIBUCIÓN DE SPLITS
 Las particiones se distribuyeron de la siguiente manera:
 
+<div align="center>
 |    Split   | Porcentaje | Imágenes | Captions |
 |:----------:|:----------:|:--------:|:--------:|
 |    Train   |     70%    |   5564   |   28320  |
 | Validation |     20%    |   1618   |   8090   |
 |    Test    |     10%    |    809   |   4045   |
+</div>
 
 ----
 
