@@ -37,7 +37,11 @@ Las particiones se distribuyeron de la siguiente manera:
 
 ----
 
-## 3) ARQUITECTURA
-### 3.1) ENCODER
+## 3) PREPROCESAMIENTO DE DATOS
 
-### 3.2) DECODER
+----
+
+## 4) ARQUITECTURA
+### 4.1) ENCODER
+
+### 4.2) DECODER
