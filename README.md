@@ -42,7 +42,7 @@ Las particiones se distribuyeron de la siguiente manera:
 ### 3.1) IMAGEN
 El preprocesamiento de las imágenes se realizaron de acuerdo al modelo *Inception V3*, y se describen a continuación:
 
-\- 1.- **Resize 299**:
+\- 1)- **Resize 299**:
     Redimensionado del lado más pequeño de la imagen para mantener el *ratio* ancho*alto.
   
 \- 2.- **Center Crop 299**:
