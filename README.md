@@ -10,3 +10,6 @@ El objetivo de la implementación se enfoca en evaluar y comparar dos enfoques s
 Además, utilicé estrategias de *decoding* como *Greedy Approach*, *Beam Search* con normalización por longitud y *Diverse Beam Search*, evaluadas a través de la métrica BLEU Score.
 
 ## 2) ARQUITECTURA
+### 2.1) ENCODER
+
+### 2.2) DECODER
