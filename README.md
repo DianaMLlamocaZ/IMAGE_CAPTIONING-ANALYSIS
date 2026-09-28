@@ -31,6 +31,8 @@ Las particiones se distribuyeron de la siguiente manera:
 | Validation |     20%    |   1618   |   8090   |
 |    Test    |     10%    |    809   |   4045   |
 
+<small>A cada imagen le corresponde 5 *captions*.</small>
+
 </div>
 
 ----
