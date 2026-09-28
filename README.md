@@ -17,6 +17,8 @@ Además, utilicé estrategias de *decoding* como *Greedy Approach*, *Beam Search
 
 
 ### 2.1) DIVISIÓN DE DATOS
+La división de datos se realizó en base a la cantidad de imágenes para evitar *Data Leakage*, el cual podía ocurrir si la partición recaía sobre el total de *captions*.
+
 
 
 ----
