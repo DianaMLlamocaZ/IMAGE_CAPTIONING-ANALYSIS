@@ -24,6 +24,7 @@ La división de datos se realizó en base a la cantidad de imágenes para evitar
 Las particiones se distribuyeron de la siguiente manera:
 
 <div align="center>
+
 |    Split   | Porcentaje | Imágenes | Captions |
 |:----------:|:----------:|:--------:|:--------:|
 |    Train   |     70%    |   5564   |   28320  |
