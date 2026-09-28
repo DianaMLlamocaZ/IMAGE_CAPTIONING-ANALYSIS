@@ -56,7 +56,7 @@ El preprocesamiento de las imágenes se realizó de acuerdo al modelo *Inception
 
 ====
 
-### 3.2) TEXTO
+### <ins>3.2) TEXTO</ins>
 
 ----
 
