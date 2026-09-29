@@ -65,6 +65,9 @@ El preprocesamiento de las imágenes se realizó de acuerdo al modelo *Inception
         ```json{"<pad>": 0, "<unk>": 1, "<start_seq>": 2, "<end_seq>": 3}```
 - Tamaño final del vocabulario: 2463
 
+#### <ins>3.2.2) PREPROCESAMIENTO DE CAPTIONS</ins>
+-
+
 ----
 
 ## 4) ARQUITECTURA
