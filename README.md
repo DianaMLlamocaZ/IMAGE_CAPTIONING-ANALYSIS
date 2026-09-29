@@ -66,7 +66,11 @@ El preprocesamiento de las imágenes se realizó de acuerdo al modelo *Inception
 - Tamaño final del vocabulario: 2463
 
 #### <ins>3.2.2) PREPROCESAMIENTO DE CAPTIONS</ins>
--
+- Conversión a minúscula
+- Eliminación de signos de puntuación
+- Eliminar espacios al inicio y fin del *caption* preprocesado.
+- Mapeo del *caption* preprocesado (*string*) a una secuencia de ID Tokens (lista numérica).
+NOTA: Si una palabra se encuentra en el *caption* preprocesado y NO en el vocabulario, se le asigna el token "<unk>".
 
 ----
 
