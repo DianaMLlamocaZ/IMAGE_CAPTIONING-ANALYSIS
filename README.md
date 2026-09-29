@@ -75,7 +75,7 @@ El preprocesamiento de *captions* comprende las etapas de normalización de text
 
 
 > **NOTA**:<br>
-> - Si una palabra se encuentra en el *caption* preprocesado y NO en el vocabulario, se le asigna el token "<unk>".<br>
+> - Si una palabra se encuentra en el *caption* preprocesado y NO en el vocabulario, se le asigna el token "\<unk>".<br>
 > - Cada tensor numérico de *ID Tokens* inicia y finaliza con los tokens "<start_seq>" y "<end_seq>", respectivamente.
 
 ----
