@@ -66,13 +66,17 @@ El preprocesamiento de las imágenes se realizó de acuerdo al modelo *Inception
 - Tamaño final del vocabulario: 2463
 
 #### <ins>3.2.2) PREPROCESAMIENTO DE CAPTIONS</ins>
-- Conversión a minúscula
+El preprocesamiento de *captions* comprende las etapas de normalización de texto y su conversión a secuencia de ID Tokens como *input* para el *decoder*:
+
+- Conversión a minúsculas
 - Eliminación de signos de puntuación
-- Eliminar espacios al inicio y fin del *caption* preprocesado.
-- Mapeo del *caption* preprocesado (*string*) a una secuencia de ID Tokens (lista numérica).<br>
+- Limpieza de espacios al inicio y fin del *caption* preprocesado.
+- Mapeo del *caption* preprocesado (*string*) a una secuencia de *ID Tokens* (tensor numérico).<br>
 
 
-> **NOTA**: Si una palabra se encuentra en el *caption* preprocesado y NO en el vocabulario, se le asigna el token "<unk>".
+> **NOTA**:
+> Si una palabra se encuentra en el *caption* preprocesado y NO en el vocabulario, se le asigna el token "<unk>".
+> Cada tensor numérico de *ID Tokens* inicia y finaliza con los tokens "<start_seq>" y "<end_seq>", respectivamente.
 
 ----
 
