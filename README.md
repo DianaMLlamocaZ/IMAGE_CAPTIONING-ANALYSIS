@@ -83,8 +83,10 @@ El preprocesamiento de *captions* comprende las etapas de normalización de text
 ## 4) ARQUITECTURA
 La arquitectura del modelo consta de los siguientes componentes:<br>
 
-- **Encoder**: Utiliza el modelo *Inception V3*, como extractor de características, para generar el *embedding* de la imagen.<br>
-- **Decoder**: El *decoder* toma como *hidden state* inicial el *embedding* de la imagen generada por el *encoder* y genera el *caption* iterativamente, actualizando el *hidden state* en cada paso.
+- **Encoder**:
+    - Utiliza el modelo *Inception V3*, como extractor de características, para generar el *embedding* de la imagen.<br>
+- **Decoder**:
+    - El *decoder* toma como *hidden state* inicial el *embedding* de la imagen generada por el *encoder* y genera el *caption* iterativamente, actualizando el *hidden state* en cada paso.
 
 A continuación, se describe cada componente detalladamente: 
 
