@@ -71,9 +71,9 @@ El preprocesamiento de las imágenes se realizó de acuerdo al modelo *Inception
 - Eliminar espacios al inicio y fin del *caption* preprocesado.
 - Mapeo del *caption* preprocesado (*string*) a una secuencia de ID Tokens (lista numérica).<br>
 
-<aside>
- <b>**NOTA**</b>: Si una palabra se encuentra en el *caption* preprocesado y NO en el vocabulario, se le asigna el token "<unk>".
-</aside>
+
+> **NOTA**: Si una palabra se encuentra en el *caption* preprocesado y NO en el vocabulario, se le asigna el token "<unk>".
+
 ----
 
 ## 4) ARQUITECTURA
