@@ -62,7 +62,7 @@ El preprocesamiento de las imágenes se realizó de acuerdo al modelo *Inception
 - El vocabulario está compuesto por palabras que tienen una frecuencia de aparición mayor o igual a cinco en el conjunto de datos de entrenamiento.
 - El vocabulario se encarga de mapear cada palabra con su ID Token.
 - Se asignan valores predeterminados para los tokens especiales:<br>
-        ```json{"<pad>": 0, "<unk>": 1, "<start_seq>": 2, "<end_seq>": 3}```
+        ```{"<pad>": 0, "<unk>": 1, "<start_seq>": 2, "<end_seq>": 3}```
 - Tamaño final del vocabulario: 2463
 
 #### <ins>3.2.2) PREPROCESAMIENTO DE CAPTIONS</ins>
