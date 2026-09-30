@@ -145,7 +145,7 @@ A continuación, se describe cada componente detalladamente:
 - **Propagación y actualización de memoria**:
     - Para t>0, la GRU procesa el *input* actual y actualiza su *hidden state*, manteniendo la memoria activa desde t=0 hasta el paso actual para la generación del *caption*.
 
-- **Detenimiento**:
+- **Criterio de terminación**:
     - **Inferencia:**
         - Las iteraciones continúan de forma secuencial hasta que el modelo prediga el token '\<end_seq>' o si alcanza el límite máximo de pasos definidos.
           
