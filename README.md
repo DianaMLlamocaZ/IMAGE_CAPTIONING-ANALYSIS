@@ -117,7 +117,7 @@ A continuación, se describe cada componente detalladamente:
 - ***GRU***:
     - **Función:** Generar el *caption* actualizando iterativamente su *hidden state*.
       
-    - **Input Size:** '*embed_img_size*' o *emb_text_size* (tienen el mismo valor).
+    - **Input Size:** '*embed_img_size*' o *'emb_text_size'* (tienen el mismo valor).
       
     - **Hidden Size:** '*hidden_size*' --> Definido con un valor de 128 y 256 (misma arquitectura, diferentes hiperparámetros).
         
