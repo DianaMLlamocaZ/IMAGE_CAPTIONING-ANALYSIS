@@ -148,6 +148,5 @@ A continuación, se describe cada componente detalladamente:
 - **Criterio de terminación**:
     - **Inferencia:**
         - Las iteraciones continúan de forma secuencial hasta que el modelo prediga el token '\<end_seq>' o si alcanza el límite máximo de pasos definidos.
-          
     - **Entrenamiento:**
         - El bucle se ejecuta durante los 'n' pasos, que representa la longitud máxima entre todos los *captions* del *batch*, aplicando un manejo de *padding* en la función de pérdida (*ignore_padding*) para evitar que el *padding token* afecte el cálculo del gradiente en las secuencias.
