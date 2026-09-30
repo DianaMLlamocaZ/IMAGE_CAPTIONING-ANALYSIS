@@ -110,6 +110,7 @@ A continuación, se describe cada componente detalladamente:
 
 > **NOTA:** El *embedding* de la imagen ('*embed_img_size*') y el *embedding* de cada palabra ('*emb_text_size*') tienen el mismo valor porque se concatenan sobre la dimensión de secuencia (dim=1) antes de pasar a la capa GRU.
 
+---
     
 - *GRU*:
     - **Función:** Generar el *caption* actualizando iterativamente su *hidden state*.
@@ -120,6 +121,7 @@ A continuación, se describe cada componente detalladamente:
         
 > **NOTA:** La generación de *captions* es iterativa y a nivel de palabra, iniciando con el *embedding* de la imagen como tensor inicial en el *time step* 0. 
 
+---
 
 - *Classification Layer*:
     - **Función**: Predicción de la siguiente palabra en la generación del *caption*.
@@ -128,4 +130,4 @@ A continuación, se describe cada componente detalladamente:
  
     - **Output Size:** Tamaño del vocabulario --> 2463
 
-> **NOTA:** La generación de *captions* es a nivel de palabras. En ese sentido, la capa de clasificación tiene 2463 neuronas, correspondientes a las palabras del vocabulario.
+> **NOTA:** La generación de *captions* es a nivel de palabra. En ese sentido, la capa de clasificación tiene 2463 neuronas, correspondientes a las palabras del vocabulario.
