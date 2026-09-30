@@ -131,3 +131,6 @@ A continuación, se describe cada componente detalladamente:
     - **Output Size:** Tamaño del vocabulario --> 2463
 
 > **NOTA:** La generación de *captions* es a nivel de palabra. En ese sentido, la capa de clasificación tiene 2463 neuronas, correspondientes a las palabras del vocabulario.
+
+
+#### 4.2.2) FLUJO DE GENERACIÓN DE *CAPTIONS*
