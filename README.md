@@ -80,7 +80,7 @@ El preprocesamiento de *captions* comprende las etapas de normalización de text
 
 ----
 
-## 4) ARQUITECTURA
+## 4) <ins>ARQUITECTURA</ins>
 La arquitectura del modelo consta de los siguientes componentes:<br>
 
 - **Encoder**:
@@ -90,7 +90,7 @@ La arquitectura del modelo consta de los siguientes componentes:<br>
 
 A continuación, se describe cada componente detalladamente: 
 
-### 4.1) ENCODER
+### <ins>4.1) ENCODER</ins>
 - Primero, se congelan todas las capas del modelo *Inception V3*, ya que se utiliza únicamente como *feature extractor* para generar los *embeddings* de las imágenes.
   
 - Se remueve la última capa de clasificación del modelo, y se cambia por una *Identity Layer* que mantiene las 2048 dimensiones resultantes de la transformación de la capa anterior.
@@ -101,8 +101,8 @@ A continuación, se describe cada componente detalladamente:
 
 ====
 
-### 4.2) DECODER
-#### 4.2.1) CAPAS:
+### <ins>4.2) DECODER</ins>
+#### <ins>4.2.1) CAPAS:</ins>
 - *Embedding Layer*:
     - **Función:** Convertir el tensor de secuencia de *ID tokens* a tensores de secuencia de *embeddings*.
       
@@ -135,7 +135,7 @@ A continuación, se describe cada componente detalladamente:
 > **NOTA:** La generación de *captions* es a nivel de palabra. En ese sentido, la capa de clasificación tiene 2463 neuronas, correspondientes a las palabras del vocabulario.
 
 
-#### 4.2.2) FLUJO DE GENERACIÓN DE *CAPTIONS*:
+#### <ins>4.2.2) FLUJO DE GENERACIÓN DE *CAPTIONS*:</ins>
 - **Dinámica temporal ('n' pasos)**:
     - Para cada *caption*, el proceso se ejecuta mediante un bucle iterativo de 'n' pasos, donde 'n' representa la cantidad de pasos definidos en la inferencia, o la longitud máxima entre todos los *captions* si se utiliza procesamiento en *batches* para el entrenamiento.
  
