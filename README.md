@@ -107,7 +107,7 @@ A continuación, se describe cada componente detalladamente:
   
     - **Output Size:** '*emb_text_size*' --> Definido con un valor de 256<br>
 
-> **NOTA:** '*embed_img_size*' y *emb_text_size* tienen el mismo valor porque se concatenan en la dimensión de secuencia (dim=1) antes de pasar por la capa GRU.
+> **NOTA:** El *embedding* de la imagen ('*embed_img_size*') y el *embedding* de cada palabra ('*emb_text_size*') tienen el mismo valor porque se concatenan en la dimensión de secuencia (dim=1) antes de pasar a la capa GRU.
     
 - *GRU*:
     - **Función:** Generar el *caption* actualizando iterativamente su *hidden state*.
