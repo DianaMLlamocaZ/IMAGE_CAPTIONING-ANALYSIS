@@ -100,7 +100,7 @@ A continuación, se describe cada componente detalladamente:
 > **NOTA:** El *embedding* de la imagen debe tener la misma cantidad de dimensiones que el *embedding* de cada palabra.
 
 ### 4.2) DECODER
-#### 4.2.2) CAPAS:
+#### 4.2.1) CAPAS:
 - *Embedding Layer*:
     - **Función:** Convertir el tensor de secuencia de *ID tokens* a tensores de secuencia de *embeddings*.
       
@@ -119,4 +119,4 @@ A continuación, se describe cada componente detalladamente:
       
     - **Classification Layer:** Tamaño del vocabulario --> 2463, pues la generación de *captions* es a nivel de palabras.
       
-    --> **NOTA:** La generación de *captions* es iterativa y a nivel de palabra, iniciando con el *embedding* de la imagen como tensor inicial en el *time step* 0. 
+> **NOTA:** La generación de *captions* es iterativa y a nivel de palabra, iniciando con el *embedding* de la imagen como tensor inicial en el *time step* 0. 
