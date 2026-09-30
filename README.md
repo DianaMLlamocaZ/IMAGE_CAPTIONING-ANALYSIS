@@ -99,6 +99,8 @@ A continuación, se describe cada componente detalladamente:
 
 > **NOTA:** El *embedding* de la imagen debe tener la misma cantidad de dimensiones que el *embedding* de cada palabra.
 
+====
+
 ### 4.2) DECODER
 #### 4.2.1) CAPAS:
 - *Embedding Layer*:
@@ -132,7 +134,6 @@ A continuación, se describe cada componente detalladamente:
 
 > **NOTA:** La generación de *captions* es a nivel de palabra. En ese sentido, la capa de clasificación tiene 2463 neuronas, correspondientes a las palabras del vocabulario.
 
-====
 
 #### 4.2.2) FLUJO DE GENERACIÓN DE *CAPTIONS*:
 - **Dinámica temporal ('n' pasos)**: Para cada *caption*, el proceso se ejecuta mediante un bucle iterativo de 'n' pasos, donde 'n' representa la longitud de la secuencia (o la longitud máxima del *caption* si se utiliza procesamiento en *batches*).
