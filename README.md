@@ -137,7 +137,7 @@ A continuación, se describe cada componente detalladamente:
 
 #### 4.2.2) FLUJO DE GENERACIÓN DE *CAPTIONS*:
 - **Dinámica temporal ('n' pasos)**:
-    - Para cada *caption*, el proceso se ejecuta mediante un bucle iterativo de 'n' pasos, donde 'n' representa la longitud de la secuencia (o la longitud máxima entre todos los *captions* si se utiliza procesamiento en *batches* en el entrenamiento).
+    - Para cada *caption*, el proceso se ejecuta mediante un bucle iterativo de 'n' pasos, donde 'n' representa la cantidad de pasos definidos en la inferencia, o la longitud máxima entre todos los *captions* si se utiliza procesamiento en *batches* para el entrenamiento.
  
 - **Paso inicial (t=0)**:
     - Se utiliza el *embedding* de la imagen como el *input* inicial de la capa GRU para establecer el contexto visual y realizar la predicción del primer *token* (que corresponde al token '\<start_seq>' debido a la forma de inferencia definida en la implementación).
