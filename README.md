@@ -99,4 +99,16 @@ A continuación, se describe cada componente detalladamente:
 
 
 ### 4.2) DECODER
-- 
+#### 4.2.2) CAPAS:
+- *Embedding Layer*:
+    - Función: Convertir el tensor de secuencia de *ID tokens* a tensores de secuencia de *embeddings*
+    - *Input Size*: Tamaño del vocabulario --> 2463
+    - *Output Size*: '*emb_text_size*' --> Definido con un valor de 256
+    --> **NOTA:** '*embed_img_size*' y *emb_text_size* tienen el mismo valor porque se concatenan en la dimensión de secuencia (dim=1).
+    
+- *GRU*:
+    - Función: Generar el *caption* actualizando iterativamente su *hidden state*
+    - *Input Size*: *embed_img_size*' o *emb_text_size* (tienen el mismo valor).
+    - *Hidden Size*: '*hidden_size*' --> Definido con un valor de 128 y 256 (misma arquitectura, diferentes hiperparámetros)
+    - *Classification Layer*: Tamaño del vocabulario --> 2463, pues la generación de *captions* es a nivel de palabras.
+    --> **NOTA:** La generación de *captions* es iterativa y a nivel de palabra, iniciando con el *embedding* de la imagen como tensor inicial en el *time step* 0. 
