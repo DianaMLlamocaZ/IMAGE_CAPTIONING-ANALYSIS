@@ -133,4 +133,5 @@ A continuación, se describe cada componente detalladamente:
 > **NOTA:** La generación de *captions* es a nivel de palabra. En ese sentido, la capa de clasificación tiene 2463 neuronas, correspondientes a las palabras del vocabulario.
 
 
-#### 4.2.2) FLUJO DE GENERACIÓN DE *CAPTIONS*
+#### 4.2.2) FLUJO DE GENERACIÓN DE *CAPTIONS*:
+
