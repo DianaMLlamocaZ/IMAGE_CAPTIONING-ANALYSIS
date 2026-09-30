@@ -97,6 +97,7 @@ A continuación, se describe cada componente detalladamente:
   
 - Se conecta la *Identity Layer* a una capa lineal que mapea las 2048 dimensiones a '*embed_img_size*' dimensiones, donde '*embed_img_size*' se definió con un valor de 256.
 
+> **NOTA:** El *embedding* de la imagen debe tener la misma cantidad de dimensiones que el *embedding* de cada palabra.
 
 ### 4.2) DECODER
 #### 4.2.2) CAPAS:
@@ -107,7 +108,7 @@ A continuación, se describe cada componente detalladamente:
   
     - **Output Size:** '*emb_text_size*' --> Definido con un valor de 256<br>
 
-> **NOTA:** El *embedding* de la imagen ('*embed_img_size*') y el *embedding* de cada palabra ('*emb_text_size*') tienen el mismo valor porque se concatenan en la dimensión de secuencia (dim=1) antes de pasar a la capa GRU.
+> **NOTA:** El *embedding* de la imagen ('*embed_img_size*') y el *embedding* de cada palabra ('*emb_text_size*') tienen el mismo valor porque se concatenan sobre la dimensión de secuencia (dim=1) antes de pasar a la capa GRU.
     
 - *GRU*:
     - **Función:** Generar el *caption* actualizando iterativamente su *hidden state*.
