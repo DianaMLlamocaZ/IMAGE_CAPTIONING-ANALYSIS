@@ -91,5 +91,8 @@ La arquitectura del modelo consta de los siguientes componentes:<br>
 A continuación, se describe cada componente detalladamente: 
 
 ### 4.1) ENCODER
+- Primero, se congelan todas las capas del modelo *Inception V3*, ya que se utiliza únicamente como *feature extractor* para generar los *embeddings* de las imágenes.
+- Se remueve la última capa de clasificación del modelo, y se cambia por una *Identity Layer* que mantiene las 2048 dimensiones resultantes de la transformación de la capa anterior.
+- Se conecta la *Identity Layer* a una capa lineal que mapea las 2048 dimensiones a '*embed_img_size*' dimensiones, donde '*embed_img_size*' se definió con un valor de 256.
 
 ### 4.2) DECODER
