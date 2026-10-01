@@ -177,3 +177,20 @@ Se utiliza la clase *DataLoader* de PyTorch para permitir el entrenamiento media
     - 2\) Para cada muestra en el *batch*, se obtiene la diferencia entre la longitud máxima y el tamaño de su *caption*.
       
     - 3\) Se genera un tensor de ceros, equivalente a la diferencia calculada, que se concatena al tensor original de la muestra para aplicar *padding* si la secuencia actual es menor a la longitud máxima detectada en el *batch*.
+
+----
+
+## 7) <ins>ENTRENAMIENTO</ins>
+El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder*, a través del mismo *optimizer*, cada uno con un *learning rate* individual.
+
+#### 7.1) <ins>ESTRATEGIA DE SECUENCIA Y TEACHER FORCING:</ins>
+- **Embedding Visual (t=0):**
+    - Al inicio del bucle iterativo, el tensor de la imagen se concatena como el primer elemento de la secuencia de entrada (dim=1), estableciendo el contexto visual como primer paso (*step*) en la *GRU Layer*.
+
+- **Implementación de Teacher Forcing:**
+    - Durante la fase de entrenamiento, el modelo no utiliza sus propias predicciones anteriores como entrada para el siguiente paso. En cambio, se utiliza la estrategia *teacher forcing* para utilizar directamente los *embeddings* del *caption* real en cada paso del bucle para estabilizar el aprendizaje y convergencia.
+ 
+- **Criterio de terminación:**
+    - El bucle se ejecuta durante '*seq_length-1*' pasos. Esto evita que el *token* *'\<end_seq>'* se procede como *input* para generar un paso posterior, permitiendo que el *decoder* aprenda a predecir cuándo finalizar la generación del *caption*.
+ 
+#### 7.2) <ins>FUNCIÓN DE PÉRDIDA Y PADDING:</ins>
