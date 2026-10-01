@@ -156,7 +156,7 @@ A continuación, se describe cada componente detalladamente:
 ## 5) <ins>DATASET</ins>
 Se creó un *custom dataset*, utilizando la clase predeterminada de PyTorch.
 
-- **Almacenamiento (en __init__):**
+- **Almacenamiento (en \__init__):**
     - Carga y almacena, en dos listas, los ID de las imágenes y los *captions*.
       
 - **Valores de retorno (en __getitem__):**
