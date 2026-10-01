@@ -250,8 +250,8 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 
 > NOTA: De la gráfica, se observó que el modelo asignó probabilidades muy altas a ciertas palabras durante la generación de *captions* del *Beam Search*:<br>
 > Para el paso de iteración inicial (t=0) sobre los *active beams*:
->   - 71% al índice de la palabra 29
->   - 23% al índice de la palabra 28, y así sucesivamente.
+>   - 65% al índice de la palabra 48.
+>   - 7% al índice de la palabra 41, y así sucesivamente.
 
 > Para el paso de iteración siguiente (t=1) sobre los *active beams*:
 >    - 26% al índice de la palabra 27
