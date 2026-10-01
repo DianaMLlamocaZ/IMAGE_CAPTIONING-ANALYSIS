@@ -236,3 +236,7 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 - **Decoder:**
     - **Capas:** *Embedding Layer* --> *GRU Layer* --> *Classification Layer*
     - **Output dimensions (respectivamente):** 256 dims --> 128 dims --> 2463 dims
+
+----
+
+## 9) <ins> DISEÑO EXPERIMENTAL</ins>
