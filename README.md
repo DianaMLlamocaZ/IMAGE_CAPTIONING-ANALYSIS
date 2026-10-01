@@ -208,3 +208,22 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 
 - **Ignore index - Loss function:**
     - Debido a que las secuencias en un mismo *batch* contienen diferentes longitudes, se utiliza la técnica *padding* para permitir el entrenamiento paralelo.<br> Con la finalidad de evitar que el modelo calcule gradientes sobre estos valores 'vacíos', se emplea el parámetro "*ignore_index=0*" en la *Cross Entropy loss function*, haciendo referencia al *padding token* para que no afecte el entrenamiento.
+
+----
+
+## 8) <ins>MODELO ENTRENADO INICIAL</ins>
+- Inicialmente, se entrenó el modelo con los siguientes hiperparámetros:
+  
+| **Hiperparámetros** | **Valor** |
+|:-------------------:|:---------:|
+|    embed_img_size   |    256    |
+|  embed_caption_size |    256    |
+|     hidden_size     |    128    |
+|      num_layers     |     1     |
+|    l_r_img_model    |    1e-5   |
+|    l_r_dec_model    |    5e-4   |
+|    épocas máximas   |    100    |
+|    Early Stopping   |     Sí    |
+
+- Encoder: *Inception V3* --> *Linear Layer*: 2048 dims --> 256 dims
+- Decoder: *Embedding Layer* --> *GRU Layer* --> *Classification Layer*: 256 dims --> 128 dims --> 2463 dims
