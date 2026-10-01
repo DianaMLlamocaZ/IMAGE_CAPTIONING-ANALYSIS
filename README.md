@@ -229,5 +229,8 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 
 </div>
 
-- Encoder: *Inception V3* --> *Linear Layer*: 2048 dims --> 256 dims
-- Decoder: *Embedding Layer* --> *GRU Layer* --> *Classification Layer*: 256 dims --> 128 dims --> 2463 dims
+- **Encoder:**
+    - *Inception V3* --> *Linear Layer*: 2048 dims --> 256 dims
+      
+- **Decoder:**
+    - *Embedding Layer* --> *GRU Layer* --> *Classification Layer*: 256 dims --> 128 dims --> 2463 dims
