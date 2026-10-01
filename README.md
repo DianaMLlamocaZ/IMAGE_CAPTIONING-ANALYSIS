@@ -166,7 +166,7 @@ Se creó un *custom dataset*, utilizando la clase predeterminada de PyTorch.
 ----
 
 ## 6) <ins>DATALOADER</ins>
-Se utiliza la clase *DataLoader* de PyTorch para permitir el entrenamiento mediante *batches*, empleando la función *collate_fn*:
+Se utiliza la clase *DataLoader* de PyTorch para permitir el entrenamiento mediante *batches*, empleando la función auxiliar *collate_fn*:
 
 - **Función:**
     - Permite el entrenamiento paralelo en *batches*.
