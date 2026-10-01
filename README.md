@@ -191,6 +191,7 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
     - Durante la fase de entrenamiento, el modelo no utiliza sus propias predicciones anteriores como entrada para el siguiente paso. En cambio, se utiliza la estrategia *teacher forcing* para utilizar directamente los *embeddings* del *caption* real en cada paso del bucle para estabilizar el aprendizaje y convergencia.
  
 - **Criterio de terminación:**
-    - El bucle se ejecuta durante '*seq_length-1*' pasos. Esto evita que el *token* *'\<end_seq>'* se procede como *input* para generar un paso posterior, permitiendo que el *decoder* aprenda a predecir cuándo finalizar la generación del *caption*.
- 
+    - El bucle se ejecuta durante '*seq_length-1*' pasos. Esto evita que el *token* *'\<end_seq>'* se procese como *input* para generar un paso posterior, permitiendo que el *decoder* aprenda a predecir cuándo finalizar la generación del *caption*.
+
+
 #### 7.2) <ins>FUNCIÓN DE PÉRDIDA Y PADDING:</ins>
