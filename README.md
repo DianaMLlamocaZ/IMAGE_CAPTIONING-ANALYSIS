@@ -242,3 +242,5 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 ## 9) <ins>DISEÑO EXPERIMENTAL</ins>
 
 #### 9.1) <ins>*LOGITS: CLASIFFICATION LAYER*</ins>
+Al visualizar los valores numéricos de la distribución de probabilidad de la capa de clasificación, se observó que el modelo asigna probabilidades muy altas a ciertas palabras:
+
