@@ -184,10 +184,10 @@ Se utiliza la clase *DataLoader* de PyTorch para permitir el entrenamiento media
 El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder*, a través del mismo *optimizer*, cada uno con un *learning rate* individual.
 
 #### 7.1) <ins>ESTRATEGIA DE SECUENCIA Y TEACHER FORCING:</ins>
-- **Embedding Visual (t=0):**
+- **Embedding visual (t=0):**
     - Al inicio del bucle iterativo, el tensor de la imagen se concatena como el primer elemento de la secuencia de entrada (dim=1), estableciendo el contexto visual como primer paso (*step*) en la *GRU Layer*.
 
-- **Implementación de Teacher Forcing:**
+- **Implementación de *teacher forcing*:**
     - Durante la fase de entrenamiento, el modelo no utiliza sus propias predicciones anteriores como entrada para el siguiente paso. En cambio, se utiliza la estrategia *teacher forcing* para utilizar directamente los *embeddings* del *caption* real en cada paso del bucle para estabilizar el aprendizaje y convergencia.
  
 - **Criterio de terminación:**
