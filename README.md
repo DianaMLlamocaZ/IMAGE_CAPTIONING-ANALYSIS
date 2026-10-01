@@ -231,12 +231,14 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 
 - **Encoder:**
     - **Capas:** *Inception V3* --> *Linear Layer*
-    - **Output dimensions (respectivamente):** 2048 dims --> 256 dims
+    - ***Output dimensions* (respectivamente):** 2048 dims --> 256 dims
       
 - **Decoder:**
     - **Capas:** *Embedding Layer* --> *GRU Layer* --> *Classification Layer*
-    - **Output dimensions (respectivamente):** 256 dims --> 128 dims --> 2463 dims
+    - ***Output dimensions* (respectivamente):** 256 dims --> 128 dims --> 2463 dims
 
 ----
 
-## 9) <ins> DISEÑO EXPERIMENTAL</ins>
+## 9) <ins>DISEÑO EXPERIMENTAL</ins>
+
+#### 9.1) <ins>*LOGITS: CLASIFFICATION LAYER*</ins>
