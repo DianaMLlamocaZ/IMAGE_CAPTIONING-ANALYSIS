@@ -248,7 +248,7 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 - Dado que el algoritmo *Beam Search* generaba *captions* similares, cambiando únicamente las palabras al final de la oración, se decidió visualizar los valores numéricos de la distribución de probabilidad de la capa de clasificación, obteniendo los siguientes resultados: 
 
 
-> NOTA: De la gráfica, se observó que el modelo asignó probabilidades muy altas a ciertas palabras durante la generación de *captions* del *Beam Search*:
+> NOTA: De la gráfica, se observó que el modelo asignó probabilidades muy altas a ciertas palabras durante la generación de *captions* del *Beam Search*:<br>
 > Para el paso de iteración inicial (t=0) sobre los *active beams*:
 >   - 71% al índice de la palabra 29
 >   - 23% al índice de la palabra 28, y así sucesivamente.
