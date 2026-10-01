@@ -213,7 +213,8 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 
 ## 8) <ins>MODELO ENTRENADO INICIAL</ins>
 - Inicialmente, se entrenó el modelo con los siguientes hiperparámetros:
-  
+
+<div align="center">
 | **Hiperparámetros** | **Valor** |
 |:-------------------:|:---------:|
 |    embed_img_size   |    256    |
@@ -224,6 +225,7 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 |    l_r_dec_model    |    5e-4   |
 |    épocas máximas   |    100    |
 |    Early Stopping   |     Sí    |
+</div>
 
 - Encoder: *Inception V3* --> *Linear Layer*: 2048 dims --> 256 dims
 - Decoder: *Embedding Layer* --> *GRU Layer* --> *Classification Layer*: 256 dims --> 128 dims --> 2463 dims
