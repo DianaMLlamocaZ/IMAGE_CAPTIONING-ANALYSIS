@@ -162,3 +162,7 @@ Se creó un *custom dataset*, utilizando la clase predeterminada de PyTorch.
 - **Valores de retorno (en \_\_getitem_\_\):**
     - Preprocesa la imagen y el *caption* con las [funciones de preprocesamiento de datos definidas](#3-preprocesamiento-de-datos).
     - Retorna el tensor de la imagen y el tensor de secuencia de ID Tokens del *caption*, listos para utilizarse en el *Encoder* y *Decoder*.
+
+----
+
+## 6) <ins>DATALOADER</ins>
