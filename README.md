@@ -220,8 +220,8 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 |:-------------------:|:---------:|
 |    embed_img_size   |    256    |
 |  embed_caption_size |    256    |
-|     hidden_size     |    128    |
-|      num_layers     |     1     |
+|     hidden_size (GRU)    |    128    |
+|      num_layers (GRU)     |     1     |
 |    l_r_img_model    |    1e-5   |
 |    l_r_dec_model    |    5e-4   |
 |    épocas máximas   |    100    |
