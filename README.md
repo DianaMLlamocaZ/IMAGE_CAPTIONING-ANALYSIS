@@ -7,7 +7,7 @@ El objetivo de la implementación se enfoca en evaluar y comparar dos enfoques s
 - 1\) La modificación de hiperparámetros de la arquitectura conjunta (Encoder-Decoder).
 - 2\) El análisis del efecto de la frecuencia de palabras y su aplicación mediante Class Weights.
   
-Además, utilicé estrategias de *decoding* como *Greedy Approach*, *Beam Search* con normalización por longitud y *Diverse Beam Search*, evaluadas a través de la métrica BLEU Score.
+Además, utilicé estrategias de *decoding* como *Greedy Approach*, *Vanilla Beam Search* con normalización por longitud y *Diverse Beam Search*, evaluadas a través de la métrica *BLEU Score*.
 
 ----
 
