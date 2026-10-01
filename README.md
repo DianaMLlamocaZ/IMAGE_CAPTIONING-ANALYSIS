@@ -199,6 +199,8 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
     - En cada iteración, el *hidden state* de la *GRU Layer* pasa por la capa de clasificación para generar *logits* (que representa la distribución de probabilidad no normalizada) sobre el espacio total del vocabulario (2463 clases/palabras).<br>
       Los tensores resultantes se concatenan y permutan a las siguientes dimensiones:<br>
       <div align="center">
-      ```[batch_size,vocab_size,sequence_length]```<br>
+        
+      ```[batch_size,vocab_size,sequence_length]```
+      
       </div>
       para evaluarse de forma multidimensional utilizando la *Cross Entropy Loss Function* de PyTorch.
