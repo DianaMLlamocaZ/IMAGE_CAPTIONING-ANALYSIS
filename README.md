@@ -156,9 +156,9 @@ A continuación, se describe cada componente detalladamente:
 ## 5) <ins>DATASET</ins>
 Se creó un *custom dataset*, utilizando la clase predeterminada de PyTorch.
 
-- **Almacenamiento (en \__init__\):**
+- **Almacenamiento (en \_\_init_\_\):**
     - Carga y almacena, en dos listas, los ID de las imágenes y los *captions*.
       
-- **Valores de retorno (en \__getitem__\):**
+- **Valores de retorno (en \_\_getitem_\_\):**
     - Preprocesa la imagen y el *caption* con las [funciones de preprocesamiento de datos definidas](#3-preprocesamiento-de-datos).
     - Retorna el tensor de la imagen y el tensor de secuencia de ID Tokens del *caption*, listos para utilizarse en el *Encoder* y *Decoder*.
