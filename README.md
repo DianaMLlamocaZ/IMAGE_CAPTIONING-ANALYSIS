@@ -257,7 +257,7 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 >    - 26% al índice de la palabra 27
 >    - 20% al índice de la palabra 28, y así sucesivamente
 
--> **OBSERVACIÓN:** Esto ocasiona que el algoritmo *Beam Search* continúe eligiendo la misma secuencia solo por tener una mayor probabilidad conjunta, evitando considerar otras ramas de secuencias.
+--> **OBSERVACIÓN:** Esto ocasiona que el algoritmo *Beam Search* continúe eligiendo la misma secuencia solo por tener una mayor probabilidad conjunta, evitando considerar otras ramas de secuencias.
 
 #### 9.3) <ins>*TEMPERATURE*: *SOFTMAX FUNCTION*</ins>
 - Debido al motivo anterior, se decidió utilizar un factor de escala '*temperature*' sobre los *logits*, antes de que se normalicen a un rango [0-1] (probabilidades) mediante la *SoftMax Function*, para uniformizar la distribución de probabilidad de la capa de clasificación y visualizar el efecto que tiene sobre las *captions* generadas del algoritmo *Vanilla Beam Search* con normalización por longitud.<br>
