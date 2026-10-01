@@ -245,12 +245,17 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 
 
 #### 9.2) <ins>*LOGITS*: *CLASIFFICATION LAYER*</ins>
-- Dado que el algoritmo *Beam Search* generaba *captions* similares, cambiando únicamente las palabras al final de la oración, se decidió visualizar los valores numéricos de la distribución de probabilidad de la capa de clasificación, obteniendo los siguientes resultados: 
+- Dado que el algoritmo *Beam Search* generaba *captions* similares, cambiando únicamente las palabras al final de la oración, se decidió visualizar los valores numéricos de la distribución de probabilidad de la capa de clasificación en cada paso de iteración, obteniendo los siguientes resultados: 
 
 
 > NOTA: De la gráfica, se observó que el modelo asignó probabilidades muy altas a ciertas palabras:
+> Para el paso de iteración inicial (t=0) de *Beam Search*:
 >   - 71% al índice de la palabra 29
->   - 23% al índice de la palabra 28, y así sucesivamente. 
+>   - 23% al índice de la palabra 28, y así sucesivamente.
+
+> Para el paso de iteración siguiente (t=1) de *Beam Search*:
+>    - 26% al índice de la palabra 27
+>    - 20% al índice de la palabra 28, y así sucesivamente
 
 
 #### 9.3) <ins>*TEMPERATURE*: *SOFTMAX FUNCTION*</ins>
