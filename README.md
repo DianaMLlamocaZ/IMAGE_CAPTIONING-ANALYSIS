@@ -195,3 +195,8 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 
 
 #### 7.2) <ins>FUNCIÓN DE PÉRDIDA Y PADDING:</ins>
+- **Cálculo de logits:**
+    - En cada iteración, el *hidden state* de la *GRU Layer* pasa por la capa de clasificación para generar *logits* (que representa la distribución de probabilidad no normalizada) sobre el espacio total del vocabulario (2463 clases/palabras).
+      Los tensores resultantes se concatenan y permutan a las siguientes dimensiones:
+      ```[batch_size,vocab_size,sequence_length]```
+      para evaluarse de forma multidimensional utilizando la *Cross Entropy Loss Function* de PyTorch.
