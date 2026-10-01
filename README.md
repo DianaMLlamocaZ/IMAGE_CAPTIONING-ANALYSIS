@@ -241,6 +241,20 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
 
 ## 9) <ins>DISEÑO EXPERIMENTAL</ins>
 
-#### 9.1) <ins>*LOGITS: CLASIFFICATION LAYER*</ins>
-Al visualizar los valores numéricos de la distribución de probabilidad de la capa de clasificación, se observó que el modelo asigna probabilidades muy altas a ciertas palabras:
+#### 9.1) <ins>*BEAM SEARCH*: *CAPTIONS GENERADOS*</ins>
 
+
+#### 9.2) <ins>*LOGITS*: *CLASIFFICATION LAYER*</ins>
+- Dado que el algoritmo *Beam Search* generaba *captions* similares, cambiando únicamente las palabras al final de la oración, se decidió visualizar los valores numéricos de la distribución de probabilidad de la capa de clasificación, obteniendo los siguientes resultados: 
+
+
+> NOTA: De la gráfica, se observó que el modelo asignó probabilidades muy altas a ciertas palabras.
+> 71% al índice de la palabra 29
+> 23% al índice de la palabra 28, y así sucesivamente. 
+
+
+#### 9.3) <ins>*TEMPERATURE*: *SOFTMAX FUNCTION*</ins>
+- Debido al motivo anterior, se decidió utilizar un factor de escala '*temperature*' sobre los *logits*, antes de que se normalicen a un rango [0-1] (probabilidades) mediante la *SoftMax Function*, para uniformizar la distribución de probabilidad de la capa de clasificación y visualizar el efecto que tiene sobre las *captions* generadas del algoritmo *Beam Search*.<br>
+
+
+> **NOTA:** Mientras mayor sea el valor de *temperature*, más uniforme se vuelve la distribución de probabilidad, lo que incrementa la aleatoriedad entre diversos *tokens* y reduce las magnitudes altas de probabilidad.
