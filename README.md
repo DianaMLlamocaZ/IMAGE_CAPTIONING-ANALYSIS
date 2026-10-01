@@ -173,5 +173,7 @@ Se utiliza la clase *DataLoader* de PyTorch para permitir el entrenamiento media
       
 - **Alineación de secuencias (*collate_fn*):**
     - 1\) Se calcula la longitud exacta, de cada tensor de *caption* dentro del *batch*, para determinar la longitud máxima de secuencia.
+      
     - 2\) Para cada muestra en el *batch*, se obtiene la diferencia entre la longitud máxima y el tamaño de su *caption*.
+      
     - 3\) Se genera un tensor de ceros, equivalente a la diferencia calculada, que se concatena al tensor original de la muestra para aplicar *padding* si la secuencia actual es menor a la longitud máxima detectada en el *batch*.
