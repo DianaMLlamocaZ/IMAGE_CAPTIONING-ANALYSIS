@@ -205,3 +205,6 @@ El entrenamiento optimiza conjuntamente los parámetros del *Encoder* y *Decoder
       </div>
       
       para evaluarse de forma multidimensional utilizando la *Cross Entropy Loss Function* de PyTorch.
+
+- **Ignore index - Loss Function:**
+    - Debido a que las secuencias en un mismo *batch* contienen diferentes longitudes, se utiliza la técnica *padding* para permitir el entrenamiento paralelo. Con la finalidad de evitar que el modelo calcule gradientes sobre estos valores 'vacíos', se emplea el parámetro "*ignore_index=0*" en la *loss function*, haciendo referencia al *padding token* para que no afecte el entrenamiento.
